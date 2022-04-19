@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <center>
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="214.0" prefWidth="612.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="51.60001220703125" minHeight="0.0" prefHeight="28.000018310546878" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="88.4" minHeight="10.0" prefHeight="47.2" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="52.800024414062506" minHeight="10.0" prefHeight="45.599999999999994" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fitHeight="505.0" fitWidth="854.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Pictures/844946240_preview_7538841421dea4da2e4f1dfe1ea1d1c2d0c0632e.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </ImageView>
+            <PasswordField fx:id="txtPassword" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="229.0" style="-fx-background-color: #5a717d;" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets top="-50.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Segoe UI Semibold" size="12.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </PasswordField>
+            <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#onActionbtnLogin" prefHeight="20.0" prefWidth="120.0" style="-fx-background-color: #043033; -fx-border-color: #5a717d; -fx-background-radius: 10; -fx-border-radius: 10;" text="Enter" textFill="#96c1d7" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="-20.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="60.0" />
+         </BorderPane.margin>
+         <opaqueInsets>
+            <Insets left="-100.0" />
+         </opaqueInsets>
+      </GridPane>
+   </center>
+   <top>
+      <ImageView fitHeight="136.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../../../../Pictures/6540233702_392cdcef-726e-452e-ac91-0db7a50b41f7.png" />
+         </image>
+         <BorderPane.margin>
+            <Insets top="50.0" />
+         </BorderPane.margin>
+      </ImageView>
+   </top>
+</BorderPane>
